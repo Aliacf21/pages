@@ -19,7 +19,7 @@
 window.SITE_CONTENT = {
     // Browser tab title
     meta: {
-        title: "AI Sales",
+        title: "nephew in a bottle — your online presence, handled",
     },
 
     // Top navigation bar
@@ -35,80 +35,87 @@ window.SITE_CONTENT = {
     hero: {
         title: "Text what you want done. AI handles the details.",
         subtitle:
-            "Meet \u201Cnephew in a bottle\u201D. Instead of texting some " +
-            "tech-savvy young person to handle all things website related. " +
-            "Just text us and have it done in seconds. No changes without " +
-            "your prior approval. We handle the tech, you handle the business.",
+            "Meet “nephew in a bottle.” Instead of texting some tech-savvy " +
+            "kid every time your website needs a tweak, you just text us — " +
+            "updated hours, a new photo, this week's promo — and it's done in " +
+            "seconds. Nothing goes live without your approval. You run the " +
+            "business; we handle the tech.",
         cta: "Book demo",
     },
 
-    // "Highly secure" feature row
+    // "Lightning speed" feature row
     secure: {
-        heading: "Highly secure",
-        point1Title: "DDOS protection",
+        heading: "Lightning speed",
+        point1Title: "Live in minutes",
         point1Text:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. " +
-            "Reiciendis commodi temporibus at? Aspernatur, a necessitatibus?",
-        point2Title: "CSRF protection",
+            "Text us a change and it's live before your coffee's cold—" +
+            "updated hours, a new photo, this week's special, done. " +
+            "No dashboards, no waiting.",
+        point2Title: "Easy as texting",
         point2Text:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. " +
-            "Reiciendis commodi temporibus at? Aspernatur, a necessitatibus?",
+            "No app to download, no passwords to remember. If you can send " +
+            "a text message, you already know how to use us.",
     },
 
-    // "Lightning speed" feature row
+    // "Highly secure" feature row
     speed: {
-        heading: "Lightning speed",
-        point1Title: "10x Speed",
+        heading: "Highly secure",
+        point1Title: "Locked down tight",
         point1Text:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. " +
-            "Reiciendis commodi temporibus at? Aspernatur, a necessitatibus?",
-        point2Title: "CSRF protection",
+            "Nobody touches your site, listing, or photos but us—no logins " +
+            "for you to lose, no passwords to forget, nothing for a hacker to find.",
+        point2Title: "We watch it for you",
         point2Text:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. " +
-            "Reiciendis commodi temporibus at? Aspernatur, a necessitatibus?",
+            "If a scammer tries to hijack your Google listing or a page goes " +
+            "down, we catch it and fix it, usually before you'd ever notice.",
     },
 
     // The three colored cards
     cards: {
-        card1Title: "Lightning fast",
+        card1Title: "Get found",
         card1Text:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. " +
-            "Voluptates tenetur officiis temporibus natus ratione nam " +
-            "officia tempore nostrum esse tempora.",
-        card2Title: "Negotiate better",
+            "When someone nearby searches for what you do, you're the name " +
+            "that comes up—on Google, on Maps, on their phone. " +
+            "More eyes, more calls, more business.",
+        card2Title: "Look the part",
         card2Text:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. " +
-            "Voluptates tenetur officiis temporibus natus ratione nam " +
-            "officia tempore nostrum esse tempora.",
-        card3Title: "Secure",
+            "A clean, professional site and up-to-date profiles that earn " +
+            "trust before a customer ever picks up the phone. " +
+            "No more “are they even still open?”",
+        card3Title: "Zero hassle",
         card3Text:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. " +
-            "Voluptates tenetur officiis temporibus natus ratione nam " +
-            "officia tempore nostrum esse tempora.",
+            "No dashboard, no app, no password to chase down. You send a " +
+            "text, we do the rest—and nothing goes live until you say so.",
     },
 
-    // "Take your negotiation to next level" feature grid
+    // "Everything we handle for you" feature grid
     featuresGrid: {
-        heading: "Take your negotiation to next level",
-        feature1Title: "Feature 1",
-        feature1Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        feature2Title: "Feature 2",
-        feature2Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        feature3Title: "Feature 3",
-        feature3Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        feature4Title: "Feature 4",
-        feature4Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        feature5Title: "Feature 5",
-        feature5Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        feature6Title: "Feature 6",
-        feature6Text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        heading: "Everything we handle for you",
+        feature1Title: "Your website",
+        feature1Text:
+            "We build it, update it, and keep it current—hours, photos, services, and prices.",
+        feature2Title: "Google listing",
+        feature2Text:
+            "We keep your Google profile accurate and ranking, so locals find you first.",
+        feature3Title: "Social media",
+        feature3Text:
+            "Regular posts to Instagram and Facebook, without you ever opening an app.",
+        feature4Title: "Reviews",
+        feature4Text:
+            "We help you gather new reviews and reply to every one the right way.",
+        feature5Title: "Calls & messages",
+        feature5Text:
+            "Click-to-call buttons and contact forms that send customers straight to you.",
+        feature6Title: "You approve it all",
+        feature6Text:
+            "Nothing changes until you reply “yes.” You're always in control.",
     },
 
     // Newsletter signup
     newsletter: {
-        heading: "Keep yourself updated",
-        placeholder: "email",
-        button: "Signup",
+        heading: "Stay in the loop",
+        placeholder: "Your email",
+        button: "Sign up",
     },
 
     // Footer
