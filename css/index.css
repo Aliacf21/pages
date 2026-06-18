@@ -33,6 +33,85 @@ header > .collapsible-header{
     transition: width 0.3s ease;
 }
 
+/* --------- site header / brand ---------- */
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 64px;
+    padding: 0.75rem 5%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    z-index: 50;
+    color: #000;
+}
+
+.brand__logo {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.brand__name {
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.header-cta {
+    display: inline-flex;
+    height: 42px;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 4px 6px 4px 18px;
+    border-radius: 9999px;
+    background-color: #0d0d0d;
+    color: #fff;
+    transition: opacity 0.2s;
+}
+
+.header-cta:hover {
+    opacity: 0.9;
+}
+
+.header-cta__icon {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: var(--primary, #bffe66);
+    color: #000;
+    font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+    .site-header > .collapsible-header {
+        width: auto;
+        gap: 1.75rem;
+        place-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+}
+
 .animated-collapse{
     transition: width 0.3s ease;
 }
@@ -322,30 +401,24 @@ header > .collapsible-header{
     height: auto;
 }
 
-.footer-brand__address {
-    font-style: normal;
+.footer-brand__tagline {
+    margin: 0;
     line-height: 1.6;
     color: #595959;
 }
 
-.footer-cols {
+.footer-brand__address {
+    font-style: normal;
+    line-height: 1.6;
+    color: #8a8a8a;
+    font-size: 0.9rem;
+}
+
+.footer-links-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
-}
-
-.footer-col {
-    display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-    min-width: 140px;
-}
-
-.footer-heading {
-    margin-bottom: 0.4rem;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #000;
+    gap: 1.75rem;
+    align-items: flex-start;
 }
 
 .footer-link{
@@ -358,6 +431,16 @@ header > .collapsible-header{
     color: var(--footer-link-hover);
 }
 
+.site-footer__bottom {
+    max-width: 1100px;
+    margin: 2.5rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ececec;
+    color: #9b9b9b;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .site-footer {
         padding: 2.5rem 6%;
@@ -365,11 +448,7 @@ header > .collapsible-header{
 
     .site-footer__inner {
         flex-direction: column;
-        gap: 2.5rem;
-    }
-
-    .footer-cols {
-        gap: 3rem;
+        gap: 2rem;
     }
 }
 
@@ -429,9 +508,10 @@ header > .collapsible-header{
         min-height: 100vh;
         height: 100dvh;
         width: 0vw;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 1.5rem;
         padding: 5px;
-        padding-top: 5%;
+        padding-top: 80px;
         padding-bottom: 5%;
         place-items: end;
         background-color: #ffffff;
@@ -440,8 +520,23 @@ header > .collapsible-header{
         box-shadow: 2px 0px 3px #000;
     }
 
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1.25rem;
+        width: 100%;
+        padding-right: 0.5rem;
+    }
+
+    .header-actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0.5rem;
+    }
+
     .header-links{
         color: black;
     }
-    
+
 }

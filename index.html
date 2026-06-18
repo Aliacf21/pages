@@ -36,52 +36,35 @@
         />
     </head>
     <body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fff]">
-        <header
-            class="tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 
-                    tw-px-[5%] max-lg:tw-mr-auto max-lg:tw-px-4 lg:tw-justify-around"
-        >
-            <!-- <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
-                <img
-                    src="./assets/logo.png"
-                    alt="logo"
-                    class="tw-object tw-h-full tw-w-full"
-                />
-            </a> -->
+        <header class="site-header">
+            <a href="/" class="brand" aria-label="nephew in a bottle — home">
+                <img src="./assets/logo.png" alt="" class="brand__logo" />
+                <span class="brand__name" data-content="brand.name">nephew in a bottle</span>
+            </a>
+
             <div
                 class="collapsible-header animated-collapse max-lg:tw-shadow-md"
                 id="collapsed-header-items"
             >
-                <div
-                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-black 
-                            max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end 
-                            max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
-                >
+                <nav class="header-nav">
+                    <a class="header-links" href="#features" data-content="nav.features"> Features </a>
+                    <a class="header-links" href="#contact" data-content="nav.contact"> Contact us </a>
+                    <!--
+                        Hidden for this demo test landing page — no pages to link to yet.
                     <a class="header-links" href="" data-content="nav.about"> About us </a>
                     <a class="header-links" href="#pricing" data-content="nav.pricing"> Pricing </a>
-                    <a class="header-links" href="" data-content="nav.features"> Features </a>
-                    <a class="header-links" href="#contact" data-content="nav.contact"> Contact us </a>
-                </div>
-                <div
-                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base 
-                            max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
-                >
-                    <a
-                        href="#contact"
-                        aria-label="book demo"
-                        class="tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full
-                                tw-bg-black tw-p-1 tw-pl-4 tw-text-white"
-                    >
+                    -->
+                </nav>
+                <div class="header-actions">
+                    <a href="#contact" aria-label="book demo" class="header-cta">
                         <span data-content="nav.cta">Book demo</span>
-                        <div
-                            class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center 
-                                    tw-place-items-center tw-rounded-full tw-bg-primary 
-                                    tw-font-semibold tw-text-black"
-                        >
+                        <span class="header-cta__icon">
                             <i class="bi bi-arrow-right"></i>
-                        </div>
+                        </span>
                     </a>
                 </div>
             </div>
+
             <button
                 class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl 
                         tw-text-black lg:tw-hidden"
@@ -433,7 +416,7 @@
         <section
             class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
                     tw-place-items-center tw-overflow-hidden tw-p-6"
-            id=""
+            id="features"
         >
             <div
                 class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
@@ -660,6 +643,9 @@
                         alt="logo"
                         class="footer-brand__logo"
                     />
+                    <p class="footer-brand__tagline" data-content="footer.tagline">
+                        Your online presence, handled — just send a text.
+                    </p>
                     <address class="footer-brand__address" data-content="footer.address">
                         244 5th Ave Suite #1984
                         <br />
@@ -667,22 +653,14 @@
                     </address>
                 </div>
 
-                <nav class="footer-cols">
-                    <div class="footer-col">
-                        <h2 class="footer-heading" data-content="footer.companyHeading">Company</h2>
-                        <a href="#pricing" class="footer-link" data-content="footer.companyLink1">Pricing</a>
-                        <a href="" class="footer-link" data-content="footer.companyLink2">FAQ</a>
-                        <a href="#contact" class="footer-link" data-content="footer.companyLink3">Contact Us</a>
-                    </div>
-
-                    <div class="footer-col">
-                        <h2 class="footer-heading" data-content="footer.resourcesHeading">Resources</h2>
-                        <a href="" class="footer-link" data-content="footer.resourcesLink1">About us</a>
-                        <a href="" class="footer-link" data-content="footer.resourcesLink2">FAQ</a>
-                        <a href="#contact" class="footer-link" data-content="footer.resourcesLink3">Contact Us</a>
-                        <a href="" class="footer-link" data-content="footer.resourcesLink4">Privacy policy</a>
-                    </div>
+                <nav class="footer-links-row">
+                    <a href="#contact" class="footer-link" data-content="footer.linkDemo">Book a demo</a>
+                    <a href="/privacy" class="footer-link" data-content="footer.linkPrivacy">Privacy policy</a>
                 </nav>
+            </div>
+
+            <div class="site-footer__bottom">
+                <span data-content="footer.copyright">© 2026 nephew in a bottle. All rights reserved.</span>
             </div>
         </footer>
     </body>

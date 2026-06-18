@@ -22,10 +22,17 @@ window.SITE_CONTENT = {
         title: "nephew in a bottle — your online presence, handled",
     },
 
+    // Brand (logo wordmark in the header)
+    brand: {
+        name: "nephew in a bottle",
+    },
+
     // Top navigation bar
     nav: {
-        about: "About us",
-        pricing: "Pricing",
+        // about / pricing are hidden on the demo test landing page
+        // (no pages to link to yet) — re-add the links in index.html to use these.
+        // about: "About us",
+        // pricing: "Pricing",
         features: "Features",
         contact: "Contact us",
         cta: "Book demo",
@@ -137,15 +144,10 @@ window.SITE_CONTENT = {
 
     // Footer
     footer: {
+        tagline: "Your online presence, handled — just send a text.",
         address: "244 5th Ave Suite #1984\nNew York, NY 10001",
-        companyHeading: "Company",
-        companyLink1: "Pricing",
-        companyLink2: "FAQ",
-        companyLink3: "Contact Us",
-        resourcesHeading: "Resources",
-        resourcesLink1: "About us",
-        resourcesLink2: "FAQ",
-        resourcesLink3: "Contact Us",
-        resourcesLink4: "Privacy policy",
+        linkDemo: "Book a demo",
+        linkPrivacy: "Privacy policy",
+        copyright: "© 2026 nephew in a bottle. All rights reserved.",
     },
 };
