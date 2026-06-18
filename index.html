@@ -652,44 +652,37 @@
             </div>
         </section>
 
-        <footer
-            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] 
-                    tw-text-black max-md:tw-flex-col"
-        >
-            <div
-                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 
-                        max-md:tw-w-full"
-            >
-                <img
-                    src="./assets/logo.png"
-                    alt="logo"
-                    srcset=""
-                    class="tw-max-w-[120px]"
-                />
-                <div data-content="footer.address">
-                    244 5th Ave Suite #1984
-                    <br />
-                    New York, NY 10001
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <div class="footer-brand">
+                    <img
+                        src="./assets/logo.png"
+                        alt="logo"
+                        class="footer-brand__logo"
+                    />
+                    <address class="footer-brand__address" data-content="footer.address">
+                        244 5th Ave Suite #1984
+                        <br />
+                        New York, NY 10001
+                    </address>
                 </div>
-            </div>
 
-            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-                <h2 class="tw-text-3xl max-md:tw-text-xl" data-content="footer.companyHeading">Company</h2>
-                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="" class="footer-link" data-content="footer.companyLink1">Pricing</a>
-                    <a href="" class="footer-link" data-content="footer.companyLink2">FAQ</a>
-                    <a href="#contact" class="footer-link" data-content="footer.companyLink3">Contact Us</a>
-                </div>
-            </div>
+                <nav class="footer-cols">
+                    <div class="footer-col">
+                        <h2 class="footer-heading" data-content="footer.companyHeading">Company</h2>
+                        <a href="#pricing" class="footer-link" data-content="footer.companyLink1">Pricing</a>
+                        <a href="" class="footer-link" data-content="footer.companyLink2">FAQ</a>
+                        <a href="#contact" class="footer-link" data-content="footer.companyLink3">Contact Us</a>
+                    </div>
 
-            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
-                <h2 class="tw-text-3xl max-md:tw-text-xl" data-content="footer.resourcesHeading">Resources</h2>
-                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                    <a href="" class="footer-link" data-content="footer.resourcesLink1">About us</a>
-                    <a href="" class="footer-link" data-content="footer.resourcesLink2">FAQ</a>
-                    <a href="#contact" class="footer-link" data-content="footer.resourcesLink3">Contact Us</a>
-                    <a href="" class="footer-link" data-content="footer.resourcesLink4">Privacy policy</a>
-                </div>
+                    <div class="footer-col">
+                        <h2 class="footer-heading" data-content="footer.resourcesHeading">Resources</h2>
+                        <a href="" class="footer-link" data-content="footer.resourcesLink1">About us</a>
+                        <a href="" class="footer-link" data-content="footer.resourcesLink2">FAQ</a>
+                        <a href="#contact" class="footer-link" data-content="footer.resourcesLink3">Contact Us</a>
+                        <a href="" class="footer-link" data-content="footer.resourcesLink4">Privacy policy</a>
+                    </div>
+                </nav>
             </div>
         </footer>
     </body>
