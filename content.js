@@ -111,11 +111,28 @@ window.SITE_CONTENT = {
             "Nothing changes until you reply “yes.” You're always in control.",
     },
 
+    // "Book a demo" lead-capture form
+    contact: {
+        heading: "Book a demo",
+        subheading:
+            "Tell us how to reach you and we'll show you how easy it is to " +
+            "run your online presence by text.",
+        namePlaceholder: "Your name",
+        emailPlaceholder: "Email address",
+        phonePlaceholder: "Phone number",
+        messagePlaceholder: "Anything you'd like us to know? (optional)",
+        button: "Book demo",
+        success: "Thanks! We'll be in touch shortly.",
+        error: "Something went wrong. Please try again.",
+    },
+
     // Newsletter signup
     newsletter: {
         heading: "Stay in the loop",
         placeholder: "Your email",
         button: "Sign up",
+        success: "You're on the list. Thanks!",
+        error: "Something went wrong. Please try again.",
     },
 
     // Footer

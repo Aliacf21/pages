@@ -59,14 +59,14 @@
                     <a class="header-links" href="" data-content="nav.about"> About us </a>
                     <a class="header-links" href="#pricing" data-content="nav.pricing"> Pricing </a>
                     <a class="header-links" href="" data-content="nav.features"> Features </a>
-                    <a class="header-links" href="" data-content="nav.contact"> Contact us </a>
+                    <a class="header-links" href="#contact" data-content="nav.contact"> Contact us </a>
                 </div>
                 <div
                     class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base 
                             max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
                 >
                     <a
-                        href=""
+                        href="#contact"
                         aria-label="book demo"
                         class="tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full
                                 tw-bg-black tw-p-1 tw-pl-4 tw-text-white"
@@ -121,7 +121,7 @@
                     </div>
 
                     <a
-                        href=""
+                        href="#contact"
                         aria-label="book demo"
                         style="width: fit-content; align-self: flex-start"
                         class="reveal-hero-text tw-mt-6 tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full
@@ -552,6 +552,70 @@
         </section>
 
         <section
+            id="contact"
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+                    tw-place-items-center tw-overflow-hidden tw-p-6 tw-py-16"
+        >
+            <div class="reveal-up lead-card">
+                <div class="lead-card__head">
+                    <h2 class="lead-card__title" data-content="contact.heading">
+                        Book a demo
+                    </h2>
+                    <p class="lead-card__subtitle" data-content="contact.subheading">
+                        Tell us how to reach you and we'll show you how easy it
+                        is to run your online presence by text.
+                    </p>
+                </div>
+
+                <form id="lead-form" class="lead-form" novalidate>
+                    <input
+                        type="text"
+                        name="name"
+                        autocomplete="name"
+                        class="lead-input"
+                        placeholder="Your name"
+                        data-content-placeholder="contact.namePlaceholder"
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        autocomplete="email"
+                        class="lead-input"
+                        placeholder="Email address"
+                        data-content-placeholder="contact.emailPlaceholder"
+                    />
+                    <input
+                        type="tel"
+                        name="phone"
+                        autocomplete="tel"
+                        class="lead-input"
+                        placeholder="Phone number"
+                        data-content-placeholder="contact.phonePlaceholder"
+                    />
+                    <textarea
+                        name="message"
+                        rows="3"
+                        class="lead-input lead-textarea"
+                        placeholder="Anything you'd like us to know? (optional)"
+                        data-content-placeholder="contact.messagePlaceholder"
+                    ></textarea>
+
+                    <button type="submit" class="lead-submit">
+                        <span data-content="contact.button">Book demo</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                    <p
+                        id="lead-form-status"
+                        class="lead-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+                </form>
+            </div>
+        </section>
+
+        <section
             class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] 
                     tw-p-[5%] tw-px-[10%]"
         >
@@ -562,23 +626,29 @@
                     Keep yourself updated
                 </h2>
 
-                <div
-                    class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2"
-                >
+                <form id="newsletter-form" class="newsletter-form" novalidate>
                     <input
                         type="email"
-                        class="input tw-h-full tw-w-full tw-p-2 tw-outline-none"
-                        placeholder="email"
+                        name="email"
+                        autocomplete="email"
+                        class="newsletter-input"
+                        placeholder="Your email"
                         data-content-placeholder="newsletter.placeholder"
                     />
-                    <a
-                        class="btn tw-transition-colors tw-duration-[0.3s]"
-                        href=""
+                    <button
+                        type="submit"
+                        class="newsletter-btn"
                         data-content="newsletter.button"
                     >
-                        Signup
-                    </a>
-                </div>
+                        Sign up
+                    </button>
+                </form>
+                <p
+                    id="newsletter-status"
+                    class="lead-status"
+                    role="status"
+                    aria-live="polite"
+                ></p>
             </div>
         </section>
 
@@ -608,7 +678,7 @@
                 <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
                     <a href="" class="footer-link" data-content="footer.companyLink1">Pricing</a>
                     <a href="" class="footer-link" data-content="footer.companyLink2">FAQ</a>
-                    <a href="" class="footer-link" data-content="footer.companyLink3">Contact Us</a>
+                    <a href="#contact" class="footer-link" data-content="footer.companyLink3">Contact Us</a>
                 </div>
             </div>
 
@@ -617,7 +687,7 @@
                 <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
                     <a href="" class="footer-link" data-content="footer.resourcesLink1">About us</a>
                     <a href="" class="footer-link" data-content="footer.resourcesLink2">FAQ</a>
-                    <a href="" class="footer-link" data-content="footer.resourcesLink3">Contact Us</a>
+                    <a href="#contact" class="footer-link" data-content="footer.resourcesLink3">Contact Us</a>
                     <a href="" class="footer-link" data-content="footer.resourcesLink4">Privacy policy</a>
                 </div>
             </div>

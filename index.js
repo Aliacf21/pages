@@ -129,4 +129,130 @@ sections.forEach((sec) => {
 })
 
 
+// ------------- lead capture form -> folk CRM ---------------
+
+const leadForm = document.getElementById("lead-form")
+
+if (leadForm) {
+    const statusEl = document.getElementById("lead-form-status")
+    const submitBtn = leadForm.querySelector("button[type='submit']")
+
+    const copy = (window.SITE_CONTENT && window.SITE_CONTENT.contact) || {}
+    const SUCCESS_MSG = copy.success || "Thanks! We'll be in touch shortly."
+    const ERROR_MSG = copy.error || "Something went wrong. Please try again."
+
+    function setStatus(message, ok) {
+        if (!statusEl) return
+        statusEl.textContent = message
+        statusEl.style.color = ok ? "#1a7f37" : "#c0392b"
+    }
+
+    leadForm.addEventListener("submit", async (e) => {
+        e.preventDefault()
+
+        const data = {
+            name: leadForm.name.value.trim(),
+            email: leadForm.email.value.trim(),
+            phone: leadForm.phone.value.trim(),
+            message: leadForm.message.value.trim(),
+            source: "Book a demo form",
+        }
+
+        if (!data.email && !data.phone) {
+            setStatus("Please add an email or phone number.", false)
+            return
+        }
+
+        submitBtn.disabled = true
+        setStatus("Sending…", true)
+
+        try {
+            const res = await fetch("/api/lead", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            })
+
+            if (!res.ok) {
+                let serverMsg = ERROR_MSG
+                try {
+                    const payload = await res.json()
+                    if (payload && payload.error) serverMsg = payload.error
+                } catch (err) { /* ignore */ }
+                setStatus(serverMsg, false)
+                submitBtn.disabled = false
+                return
+            }
+
+            leadForm.reset()
+            setStatus(SUCCESS_MSG, true)
+        } catch (err) {
+            setStatus(ERROR_MSG, false)
+        } finally {
+            submitBtn.disabled = false
+        }
+    })
+}
+
+
+// ------------- newsletter signup -> folk CRM ---------------
+
+const newsletterForm = document.getElementById("newsletter-form")
+
+if (newsletterForm) {
+    const statusEl = document.getElementById("newsletter-status")
+    const submitBtn = newsletterForm.querySelector("button[type='submit']")
+
+    const copy = (window.SITE_CONTENT && window.SITE_CONTENT.newsletter) || {}
+    const SUCCESS_MSG = copy.success || "You're on the list. Thanks!"
+    const ERROR_MSG = copy.error || "Something went wrong. Please try again."
+
+    function setStatus(message, ok) {
+        if (!statusEl) return
+        statusEl.textContent = message
+        statusEl.style.color = ok ? "#1a7f37" : "#c0392b"
+    }
+
+    newsletterForm.addEventListener("submit", async (e) => {
+        e.preventDefault()
+
+        const email = newsletterForm.email.value.trim()
+
+        if (!email) {
+            setStatus("Please enter your email.", false)
+            return
+        }
+
+        submitBtn.disabled = true
+        setStatus("Signing you up…", true)
+
+        try {
+            const res = await fetch("/api/lead", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email: email, source: "Newsletter signup" }),
+            })
+
+            if (!res.ok) {
+                let serverMsg = ERROR_MSG
+                try {
+                    const payload = await res.json()
+                    if (payload && payload.error) serverMsg = payload.error
+                } catch (err) { /* ignore */ }
+                setStatus(serverMsg, false)
+                submitBtn.disabled = false
+                return
+            }
+
+            newsletterForm.reset()
+            setStatus(SUCCESS_MSG, true)
+        } catch (err) {
+            setStatus(ERROR_MSG, false)
+        } finally {
+            submitBtn.disabled = false
+        }
+    })
+}
+
+
 
