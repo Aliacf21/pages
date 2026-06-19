@@ -33,9 +33,9 @@ window.SITE_CONTENT = {
         // (no pages to link to yet) — re-add the links in index.html to use these.
         // about: "About us",
         // pricing: "Pricing",
-        features: "Features",
-        contact: "Contact us",
-        cta: "Book demo",
+        features: "Dashboard",
+        contact: "Examples",
+        cta: "Early access",
     },
 
     // Main hero section (top of the page)

@@ -35,7 +35,7 @@ header > .collapsible-header{
 
 /* --------- site header / brand ---------- */
 .site-header {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 20;
@@ -45,6 +45,10 @@ header > .collapsible-header{
     width: 100%;
     min-height: 64px;
     padding: 0.75rem 5%;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    border-bottom: 1px solid #ececec;
 }
 
 .brand {
@@ -76,30 +80,19 @@ header > .collapsible-header{
 
 .header-cta {
     display: inline-flex;
-    height: 42px;
     align-items: center;
-    gap: 0.5rem;
-    padding: 4px 6px 4px 18px;
-    border-radius: 9999px;
+    justify-content: center;
+    padding: 9px 18px;
+    border-radius: 10px;
     background-color: #0d0d0d;
     color: #fff;
+    font-size: 0.95rem;
+    font-weight: 500;
     transition: opacity 0.2s;
 }
 
 .header-cta:hover {
     opacity: 0.9;
-}
-
-.header-cta__icon {
-    display: flex;
-    height: 30px;
-    width: 30px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 9999px;
-    background-color: var(--primary, #bffe66);
-    color: #000;
-    font-weight: 600;
 }
 
 @media (min-width: 1024px) {
@@ -374,56 +367,68 @@ header > .collapsible-header{
     margin-top: auto;
     width: 100%;
     border-top: 1px solid #ececec;
-    padding: 3.5rem 5%;
+    padding: 1.75rem 5%;
     color: #000;
 }
 
 .site-footer__inner {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 1rem 2rem;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .footer-brand {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    max-width: 280px;
+    align-items: center;
+    gap: 0.6rem;
+    color: #000;
 }
 
 .footer-brand__logo {
-    width: 110px;
-    height: auto;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }
 
-.footer-brand__tagline {
+.footer-brand__name {
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+}
+
+.footer-tagline {
     margin: 0;
-    line-height: 1.6;
-    color: #595959;
-}
-
-.footer-brand__address {
-    font-style: normal;
-    line-height: 1.6;
     color: #8a8a8a;
     font-size: 0.9rem;
+}
+
+.site-footer__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+    max-width: 1200px;
+    margin: 1.25rem auto 0;
+    color: #9b9b9b;
+    font-size: 0.8rem;
 }
 
 .footer-links-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.75rem;
-    align-items: flex-start;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .footer-link{
-    color: #444;
-    font-size: 0.95rem;
+    color: #8a8a8a;
+    font-size: 0.8rem;
     transition: color 0.3s;
 }
 
@@ -431,24 +436,16 @@ header > .collapsible-header{
     color: var(--footer-link-hover);
 }
 
-.site-footer__bottom {
-    max-width: 1100px;
-    margin: 2.5rem auto 0;
-    padding-top: 1.5rem;
-    border-top: 1px solid #ececec;
-    color: #9b9b9b;
-    font-size: 0.85rem;
-    text-align: center;
-}
-
 @media (max-width: 768px) {
     .site-footer {
-        padding: 2.5rem 6%;
+        padding: 1.75rem 6%;
     }
 
-    .site-footer__inner {
+    .site-footer__inner,
+    .site-footer__meta {
         flex-direction: column;
-        gap: 2rem;
+        align-items: flex-start;
+        gap: 0.75rem;
     }
 }
 

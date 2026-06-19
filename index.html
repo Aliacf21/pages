@@ -47,8 +47,8 @@
                 id="collapsed-header-items"
             >
                 <nav class="header-nav">
-                    <a class="header-links" href="#features" data-content="nav.features"> Features </a>
-                    <a class="header-links" href="#contact" data-content="nav.contact"> Contact us </a>
+                    <a class="header-links" href="#features" data-content="nav.features"> Dashboard </a>
+                    <a class="header-links" href="#contact" data-content="nav.contact"> Examples </a>
                     <!--
                         Hidden for this demo test landing page — no pages to link to yet.
                     <a class="header-links" href="" data-content="nav.about"> About us </a>
@@ -56,11 +56,8 @@
                     -->
                 </nav>
                 <div class="header-actions">
-                    <a href="#contact" aria-label="book demo" class="header-cta">
-                        <span data-content="nav.cta">Book demo</span>
-                        <span class="header-cta__icon">
-                            <i class="bi bi-arrow-right"></i>
-                        </span>
+                    <a href="#contact" aria-label="early access" class="header-cta">
+                        <span data-content="nav.cta">Early access</span>
                     </a>
                 </div>
             </div>
@@ -637,30 +634,26 @@
 
         <footer class="site-footer">
             <div class="site-footer__inner">
-                <div class="footer-brand">
+                <a href="/" class="footer-brand" aria-label="nephew in a bottle — home">
                     <img
                         src="./assets/logo.png"
-                        alt="logo"
+                        alt=""
                         class="footer-brand__logo"
                     />
-                    <p class="footer-brand__tagline" data-content="footer.tagline">
-                        Your online presence, handled — just send a text.
-                    </p>
-                    <address class="footer-brand__address" data-content="footer.address">
-                        244 5th Ave Suite #1984
-                        <br />
-                        New York, NY 10001
-                    </address>
-                </div>
+                    <span class="footer-brand__name" data-content="brand.name">nephew in a bottle</span>
+                </a>
 
+                <p class="footer-tagline" data-content="footer.tagline">
+                    Your online presence, handled — just send a text.
+                </p>
+            </div>
+
+            <div class="site-footer__meta">
+                <span data-content="footer.copyright">© 2026 nephew in a bottle. All rights reserved.</span>
                 <nav class="footer-links-row">
                     <a href="#contact" class="footer-link" data-content="footer.linkDemo">Book a demo</a>
                     <a href="/privacy" class="footer-link" data-content="footer.linkPrivacy">Privacy policy</a>
                 </nav>
-            </div>
-
-            <div class="site-footer__bottom">
-                <span data-content="footer.copyright">© 2026 nephew in a bottle. All rights reserved.</span>
             </div>
         </footer>
     </body>
