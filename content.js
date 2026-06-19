@@ -19,7 +19,7 @@
 window.SITE_CONTENT = {
     // Browser tab title
     meta: {
-        title: "nephew in a bottle — your online presence, handled",
+        title: "nephew in a bottle: your online presence, handled",
     },
 
     // Brand (logo wordmark in the header)
@@ -43,11 +43,11 @@ window.SITE_CONTENT = {
         title: "Text what you want done. AI handles the details.",
         subtitle:
             "Meet “nephew in a bottle.” Instead of texting some tech-savvy " +
-            "kid every time your website needs a tweak, you just text us — " +
-            "updated hours, a new photo, this week's promo — and it's done in " +
+            "kid every time your website needs a tweak, you just text us. " +
+            "Updated hours, a new photo, this week's promo, and it's done in " +
             "seconds. Nothing goes live without your approval. You run the " +
             "business; we handle the tech.",
-        cta: "Book demo",
+        cta: "Join early access",
     },
 
     // "Lightning speed" feature row
@@ -55,8 +55,8 @@ window.SITE_CONTENT = {
         heading: "Lightning speed",
         point1Title: "Live in minutes",
         point1Text:
-            "Text us a change and it's live before your coffee's cold—" +
-            "updated hours, a new photo, this week's special, done. " +
+            "Text us a change and it's live before your coffee's cold. " +
+            "Updated hours, a new photo, this week's special, done. " +
             "No dashboards, no waiting.",
         point2Title: "Easy as texting",
         point2Text:
@@ -69,7 +69,7 @@ window.SITE_CONTENT = {
         heading: "Highly secure",
         point1Title: "Locked down tight",
         point1Text:
-            "Nobody touches your site, listing, or photos but us—no logins " +
+            "Nobody touches your site, listing, or photos but us. No logins " +
             "for you to lose, no passwords to forget, nothing for a hacker to find.",
         point2Title: "We watch it for you",
         point2Text:
@@ -82,7 +82,7 @@ window.SITE_CONTENT = {
         card1Title: "Get found",
         card1Text:
             "When someone nearby searches for what you do, you're the name " +
-            "that comes up—on Google, on Maps, on their phone. " +
+            "that comes up on Google, on Maps, on their phone. " +
             "More eyes, more calls, more business.",
         card2Title: "Look the part",
         card2Text:
@@ -92,7 +92,7 @@ window.SITE_CONTENT = {
         card3Title: "Zero hassle",
         card3Text:
             "No dashboard, no app, no password to chase down. You send a " +
-            "text, we do the rest—and nothing goes live until you say so.",
+            "text, we do the rest, and nothing goes live until you say so.",
     },
 
     // "Everything we handle for you" feature grid
@@ -100,7 +100,7 @@ window.SITE_CONTENT = {
         heading: "Everything we handle for you",
         feature1Title: "Your website",
         feature1Text:
-            "We build it, update it, and keep it current—hours, photos, services, and prices.",
+            "We build it, update it, and keep it current with hours, photos, services, and prices.",
         feature2Title: "Google listing",
         feature2Text:
             "We keep your Google profile accurate and ranking, so locals find you first.",
@@ -118,9 +118,43 @@ window.SITE_CONTENT = {
             "Nothing changes until you reply “yes.” You're always in control.",
     },
 
-    // "Book a demo" lead-capture form
+    // "See it in action" examples section
+    examples: {
+        heading: "See it in action",
+        subheading:
+            "Real requests, handled in a text. No dashboards, no logins, " +
+            "just send a message and it's done.",
+        example1Tag: "Update hours",
+        example1Request: "Hey, can you change our Saturday hours to 9am–9pm?",
+        example1Reply:
+            "You got it! Here's a quick preview of your new Saturday hours. Give it the okay and I'll make it live:",
+        example1PreviewUrl: "yoursite.com/preview/hours",
+        example1Decision: "Looks perfect, approve! 👍",
+        example1Confirm:
+            "All set! Your new Saturday hours are live on your site and Google. Anything else I can take care of? ✅",
+        example2Tag: "New promo",
+        example2Request:
+            "Can you post this weekend's 20% off special? Photo attached.",
+        example2Reply:
+            "Ooh, great deal! I've put together the 20% off promo for your site, Instagram, and Facebook. Have a look:",
+        example2PreviewUrl: "yoursite.com/preview/promo",
+        example2Decision: "Love it, approve! 👍",
+        example2Confirm: "All posted and pinned right to the top. Here's to a busy weekend! ✅",
+        example3Tag: "Add a service",
+        example3Request:
+            "We just started doing catering, can you add it to the site?",
+        example3Reply:
+            "Congrats on the new offering! I've added a Catering section with a quote button. Take a look:",
+        example3PreviewUrl: "yoursite.com/preview/catering",
+        example3Decision:
+            "Hmm, hold off for now. Let's not add catering just yet. 👎",
+        example3Confirm:
+            "No worries at all! Nothing goes live without your okay. Just give me a shout whenever you're ready. 👍",
+    },
+
+    // "Join early access" lead-capture form
     contact: {
-        heading: "Book a demo",
+        heading: "Join early access",
         subheading:
             "Tell us how to reach you and we'll show you how easy it is to " +
             "run your online presence by text.",
@@ -128,7 +162,7 @@ window.SITE_CONTENT = {
         emailPlaceholder: "Email address",
         phonePlaceholder: "Phone number",
         messagePlaceholder: "Anything you'd like us to know? (optional)",
-        button: "Book demo",
+        button: "Join early access",
         success: "Thanks! We'll be in touch shortly.",
         error: "Something went wrong. Please try again.",
     },
@@ -144,9 +178,9 @@ window.SITE_CONTENT = {
 
     // Footer
     footer: {
-        tagline: "Your online presence, handled — just send a text.",
+        tagline: "Your online presence, handled. Just send a text.",
         address: "244 5th Ave Suite #1984\nNew York, NY 10001",
-        linkDemo: "Book a demo",
+        linkDemo: "Join early access",
         linkPrivacy: "Privacy policy",
         copyright: "© 2026 nephew in a bottle. All rights reserved.",
     },

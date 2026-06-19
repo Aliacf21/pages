@@ -48,7 +48,7 @@
             >
                 <nav class="header-nav">
                     <a class="header-links" href="#features" data-content="nav.features"> Dashboard </a>
-                    <a class="header-links" href="#contact" data-content="nav.contact"> Examples </a>
+                    <a class="header-links" href="#examples" data-content="nav.contact"> Examples </a>
                     <!--
                         Hidden for this demo test landing page — no pages to link to yet.
                     <a class="header-links" href="" data-content="nav.about"> About us </a>
@@ -102,12 +102,12 @@
 
                     <a
                         href="#contact"
-                        aria-label="book demo"
+                        aria-label="join early access"
                         style="width: fit-content; align-self: flex-start"
                         class="reveal-hero-text tw-mt-6 tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full
                                 tw-bg-black tw-p-1 tw-pl-4 tw-text-white"
                     >
-                        <span data-content="hero.cta">Book demo</span>
+                        <span data-content="hero.cta">Join early access</span>
                         <div
                             class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center 
                                     tw-place-items-center tw-rounded-full tw-bg-primary 
@@ -148,7 +148,7 @@
                 <div class="tw-flex">
                     <div class="tw-h-[450px] tw-w-[300px]">
                         <img
-                            src="./assets/images/home/4.png"
+                            src="./assets/images/home/5.png"
                             alt="product1"
                             class="tw-h-full tw-w-full tw-object-contain"
                         />
@@ -233,6 +233,7 @@
             </div>
         </section>
 
+<!--
         <section
             class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
                     tw-place-items-center tw-overflow-hidden tw-p-6"
@@ -298,6 +299,97 @@
                         elit. Voluptates tenetur officiis temporibus natus
                         ratione nam officia tempore nostrum esse tempora.
                     </p>
+                </div>
+            </div>
+        </section>
+-->
+
+        <section
+            id="examples"
+            class="examples-section tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center 
+                    tw-place-items-center tw-overflow-hidden tw-p-6 tw-py-16"
+        >
+            <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-3 tw-text-center">
+                <h2 class="reveal-up tw-text-4xl tw-font-semibold" data-content="examples.heading">
+                    See it in action
+                </h2>
+                <p class="reveal-up tw-max-w-[600px] tw-text-[#595959]" data-content="examples.subheading">
+                    Real requests, handled in a text. No dashboards, no logins —
+                    just send a message and it's done.
+                </p>
+            </div>
+
+            <div class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-6">
+                <div class="example-card">
+                    <span class="example-card__tag" data-content="examples.example1Tag">Update hours</span>
+                    <div class="example-chat">
+                        <div class="chat-bubble chat-bubble--in" data-content="examples.example1Request">
+                            Hey, can you change our Saturday hours to 9am–9pm?
+                        </div>
+                        <div class="chat-bubble chat-bubble--out">
+                            <span data-content="examples.example1Reply">
+                                Here's a preview of your new Saturday hours. Approve to push it live:
+                            </span>
+                            <a class="chat-preview" href="#examples" aria-label="preview changes">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                <span data-content="examples.example1PreviewUrl">yoursite.com/preview/hours</span>
+                            </a>
+                        </div>
+                        <div class="chat-bubble chat-bubble--in" data-content="examples.example1Decision">
+                            Looks perfect — approve! 👍
+                        </div>
+                        <div class="chat-bubble chat-bubble--out" data-content="examples.example1Confirm">
+                            Done — your new Saturday hours are live on your site and Google. ✅
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <span class="example-card__tag" data-content="examples.example2Tag">New promo</span>
+                    <div class="example-chat">
+                        <div class="chat-bubble chat-bubble--in" data-content="examples.example2Request">
+                            Can you post this weekend's 20% off special? Photo attached.
+                        </div>
+                        <div class="chat-bubble chat-bubble--out">
+                            <span data-content="examples.example2Reply">
+                                Drafted the 20% off promo for your site, Instagram, and Facebook. Take a look:
+                            </span>
+                            <a class="chat-preview" href="#examples" aria-label="preview changes">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                <span data-content="examples.example2PreviewUrl">yoursite.com/preview/promo</span>
+                            </a>
+                        </div>
+                        <div class="chat-bubble chat-bubble--in" data-content="examples.example2Decision">
+                            Love it — approve! 👍
+                        </div>
+                        <div class="chat-bubble chat-bubble--out" data-content="examples.example2Confirm">
+                            Posted everywhere and pinned to the top. ✅
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <span class="example-card__tag" data-content="examples.example3Tag">Add a service</span>
+                    <div class="example-chat">
+                        <div class="chat-bubble chat-bubble--in" data-content="examples.example3Request">
+                            We just started doing catering — can you add it to the site?
+                        </div>
+                        <div class="chat-bubble chat-bubble--out">
+                            <span data-content="examples.example3Reply">
+                                Added a Catering section with a quote button. Preview and approve below:
+                            </span>
+                            <a class="chat-preview" href="#examples" aria-label="preview changes">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                <span data-content="examples.example3PreviewUrl">yoursite.com/preview/catering</span>
+                            </a>
+                        </div>
+                        <div class="chat-bubble chat-bubble--in" data-content="examples.example3Decision">
+                            Hmm, hold off for now — let's not add catering just yet. 👎
+                        </div>
+                        <div class="chat-bubble chat-bubble--out" data-content="examples.example3Confirm">
+                            No problem — nothing goes live without your OK. Just say the word when you're ready. 👍
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -539,7 +631,7 @@
             <div class="reveal-up lead-card">
                 <div class="lead-card__head">
                     <h2 class="lead-card__title" data-content="contact.heading">
-                        Book a demo
+                        Join early access
                     </h2>
                     <p class="lead-card__subtitle" data-content="contact.subheading">
                         Tell us how to reach you and we'll show you how easy it
@@ -581,7 +673,7 @@
                     ></textarea>
 
                     <button type="submit" class="lead-submit">
-                        <span data-content="contact.button">Book demo</span>
+                        <span data-content="contact.button">Join early access</span>
                         <i class="bi bi-arrow-right"></i>
                     </button>
 
@@ -651,7 +743,7 @@
             <div class="site-footer__meta">
                 <span data-content="footer.copyright">© 2026 nephew in a bottle. All rights reserved.</span>
                 <nav class="footer-links-row">
-                    <a href="#contact" class="footer-link" data-content="footer.linkDemo">Book a demo</a>
+                    <a href="#contact" class="footer-link" data-content="footer.linkDemo">Join early access</a>
                     <a href="/privacy" class="footer-link" data-content="footer.linkPrivacy">Privacy policy</a>
                 </nav>
             </div>
@@ -682,6 +774,15 @@
     <script src="./content-loader.js"></script>
 
     <script src="./index.js"></script>
+
+    <script>
+        // Demo-only: the fake "preview" links shouldn't navigate anywhere.
+        document.querySelectorAll('.chat-preview').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
 
     <style>
         .swiper-pagination-bullet {
